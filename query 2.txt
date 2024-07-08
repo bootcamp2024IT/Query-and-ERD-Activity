@@ -1,0 +1,4 @@
+SELECT tbl_customer_info.fName, tbl_customer_info.lName
+FROM tbl_customer_info
+LEFT JOIN tbl_rents_info ON tbl_customer_info.id = tbl_rents_info.tbl_customer_info_id
+WHERE tbl_rents_info.tbl_customer_info_id IS NULL;
